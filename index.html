@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- Jorge Cardona -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Web</title>
@@ -32,15 +33,52 @@
 
     <br>
     <!-- Imagenes en Html -->
+    <!-- Imagen en repositorio local -->
     <img src="img/macbook_air.webp" alt="Macbook Air" height="200px">
     <br>
 
+    <!-- imagen en repositorio remoto  -->
+    <img src="https://mac-center.com/cdn/shop/files/MacBook_Pro_13_in_Space_Gray_PDP_Image_Position-1_MXLA_5395ce92-3d36-4483-a995-b6bb011179c0.jpg?v=1700304877"
+        alt="" height="400px">
+    <br>
+
     <!-- Videos en Html -->
-    <video src="./videos/MacBook Air.mp4" width="400px" controls autoplay muted loop>Mi Video</video>
+    <!-- video en repositorio local  -->
+    <video src="./video/MacBook Air.mp4" width="400px" controls autoplay muted loop>Mi Video</video>
+    <br>
+
+    <!-- Video incrustado desde youtube -->
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/0okuAwqTHs0?si=YejhyrBZ0CIrEy02"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <br>
 
     <!-- Audio en Html -->
-    <audio src="./audio/macbook.mp3" controls autoplay loop>Mi Audio</audio>
+    <audio src="./audio/macbook.mp3" controls autoplay muted loop>Mi Audio</audio>
+    <hr>
+
+    <!-- Listas en Html -->
+    <!-- Ordenadas -->
+    <h4>Listas Ordenadas</h4>
+    <ol start="5" reversed>
+        <li>Elemento 1</li>
+        <ol>
+            <li>Subelemento 1</li>
+            <li>Subelemento 2</li>
+            <li>Subelemento 3</li>
+        </ol>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ol>
+    <!-- Desordenadas -->
+    <h4>Listas Desordenadas</h4>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+
 </body>
 
 </html>
