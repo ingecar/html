@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+
+    <!-- Get envia los datos por url y post los envia de forma segura -->
+    <form action="/datos" method="post">
+        <!-- Etiqueta del campo nombre -->
+        <!-- Para asociar el label con el input el valor del for debe ser igual al id del input  -->
+        <label for="text">Campo de texto:</label>
+        <!-- Input de tipo texto -->
+        <input type="text" name="text" id="text" placeholder="Ingrese texto">
+        <br>
+
+        <!-- input de tipo password -->
+        <label for="clave">Campo de contraseña:</label>
+        <input type="password" name="clave" id="clave" placeholder="Ingrese contraseña">
+        <br>
+
+        <!-- input de tipo email -->
+        <label for="correo">Campo de email:</label>
+        <input type="email" name="correo" id="correo" placeholder="Ingrese email">
+        <br>
+
+        <!-- Input de tipo telefono -->
+        <label for="tel">Campo de telefono:</label>
+        <input type="tel" name="tel" id="tel" minlength="1" maxlength="10">
+        <br>
+
+        <!-- Input de tipo url -->
+        <label for="ruta">Campo de url:</label>
+        <input type="url" name="ruta" id="ruta">
+        <br>
+
+        <!-- Input de tipo numero -->
+        <label for="numero">Campo de numero:</label>
+        <input type="number" name="numero" id="numero">
+        <br>
+
+        <!-- Input de tipo rango -->
+        <label for="rango">Campo de rango:</label>
+        <input type="range" name="rango" id="rango">
+        <br>
+
+        <!-- Input de tipo fecha -->
+        <label for="fecha">Campo de fecha</label>
+        <input type="date" name="fecha" id="fecha">
+        <br>
+
+        <!-- Input de tipo hora -->
+        <label for="hora">Campo de hora</label>
+        <input type="time" name="hora" id="hora">
+        <br>
+
+        <!-- Input de tipo fecha y hora -->
+        <label for="fechahora">Campo de hora</label>
+        <input type="datetime-local" name="fechahora" id="fechahora">
+        <br>
+
+        <!-- Input de tipo mes -->
+        <label for="mes">Campo de mes</label>
+        <input type="month" name="mes" id="mes">
+        <br>
+
+        <!-- Input de tipo mes -->
+        <label for="semana">Campo de mes</label>
+        <input type="week" name="semana" id="semana">
+        <br>
+
+        <!-- Input de tipo color -->
+        <label for="color">Campo de color</label>
+        <input type="color" name="color" id="color">
+        <br>
+
+        <!-- Input de tipo checkbox -->
+        <label for="check">Campo de tipo checkbox</label>
+        <input type="checkbox" name="check" id="check">
+        <br>
+
+        <!-- Input de tipo archivo -->
+        <label for="archivo">Campo de tipo archivo</label>
+        <input type="file" name="archivo" id="archivo">
+        <br> <br>
+
+        <!-- Limpiar el formulario -->
+        <input type="reset" value="Reiniciar">
+        <!-- Enviar el formulario -->
+        <input type="submit" value="Enviar">
+        <br>
+
+        <!-- Input de tipo imagen -->
+        <input type="image"
+            src="https://media.istockphoto.com/id/1199315897/es/vector/botones-rojos-vectoriales-aislados-bot%C3%B3n-de-men%C3%BA-rojo-en-blanco-haga-clic-en-el-vector-de.jpg?s=612x612&w=0&k=20&c=CkBLJkIlF43zqZwanEUUu6SiPUXNIOOTQQkrJXqoloE="
+            alt="" height="100px" width="100px">
+
+        <!-- Elemento de tipo boton a diferencia de input es mas persnalizables -->
+        <button type="submit" value="Enviar">Soy un botón</button>
+
+    </form>
+
+</body>
+
+</html>
