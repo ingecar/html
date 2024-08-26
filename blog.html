@@ -4,39 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jorge Cardona">
+    <meta name="keywords" content="blog, paises, commida">
+    <meta name="description" content="blog con los detalles y tips de la vida de Jorge Cardona">
+
+
     <title>Mi Blog</title>
 </head>
 
-<body>
+<body style="background-color: black; color: aliceblue; font-style: italic;">
     <!-- Estrctura de header, nav section y footer de una web html5 -->
     <header>
-        <h1>Informacion Personal</h1>
-        <p>Jorge Cardona</p>
-        <p>jorge.cardonaor@gmail.com</p>
+        <!-- Se agrega etiquetas css formato inline -->
+        <h1 style="text-align: center; color:cornflowerblue;">Informacion Personal</h1>
+        <p style="text-align: center; color:cornflowerblue;">Jorge Cardona</p>
+        <p style="text-align: center; color: cornflowerblue;">jorge.cardonaor@gmail.com</p>
     </header>
 
-    <hr>
+    <hr style="background-color: coral; height: 3px;">
 
     <section>
-        <fieldset>
+        <!-- Encierra el contenido en un recuadro -->
+        <fieldset id="ps1" style="border-radius: 10px; border: 2px solid; color: white;">
+            <!-- coloca una legenda al recuadro -->
             <legend>
                 Pasatiempos
             </legend>
-            <article>
-                <ul>
-                    <li>Leer</li>
-                    <li>Escuchar musica</li>
-                    <li>Trotar</li>
-                </ul>
-            </article>
+            <div>
+                <article>
+                    <ul>
+                        <li>Leer</li>
+                        <li>Escuchar musica</li>
+                        <li>Trotar</li>
+                    </ul>
+                </article>
+            </div>
         </fieldset>
 
-        <fieldset>
+        <fieldset id="ps2" style="border-radius: 10px; border: 2px solid; color: white;">
             <legend>
                 Comidas favoritas
             </legend>
 
-            <article>
+            <article style=" align-items: center;">
                 <ol>
                     <li>Sopas</li>
                     <li>Asados</li>
@@ -48,8 +58,8 @@
 
 
         <article>
-            <h2>Paises visitados</h2>
-            <table border="2">
+            <h2 style="text-align: center;">Paises visitados</h2>
+            <table border="2" align="center">
                 <caption>Lista de paises</caption>
 
                 <thead>
@@ -85,29 +95,34 @@
         </article>
         <br>
 
-        <fieldset>
+        <fieldset id="ps3" style="border-radius: 10px; border: 2px solid; color: white;">
             <legend>
                 Destinos por visitar
             </legend>
 
             <article>
                 <ul>
-                    <li><a href="https://es.wikipedia.org/wiki/Estados_Unidos" target="_blank"
-                            rel="noopener noreferrer">Estados unidos</a></li>
-                    <li><a href="https://es.wikipedia.org/wiki/Francia" target="_blank"
-                            rel="noopener noreferrer">Francia</a></li>
+                    <li><a href=" https://es.wikipedia.org/wiki/Estados_Unidos" target="_blank"
+                            rel="noopener noreferrer" style="text-decoration: none; color:white;">Estados unidos</a>
+                    </li>
+                    <li><a href="https://es.wikipedia.org/wiki/Francia" target="_blank" rel="noopener noreferrer"
+                            style="text-decoration: none; color: white;">Francia</a></li>
                 </ul>
             </article>
         </fieldset>
     </section>
-    <hr>
+    <hr style="background-color: coral; height: 3px;">
 
-    <footer>
-        <p>Blog de Jorge Cardona</p>
-        <a href="tel:3003935305">Llámame</a>
+    <footer style="text-align: center;">
+        <h2 style="color: cornflowerblue;">Blog de Jorge Cardona</h2>
+        <a href="tel:3003935305" style="text-decoration: none; color: white;">Llámame</a>
         <br>
-        <a href="mailto:jorge.cardonaor@gmail.com">Escríbeme</a>
-        <p> - Desarrollado en 2024 - </p>
+        <a href="mailto:jorge.cardonaor@gmail.com" style="text-decoration: none; color: white;">Escríbeme</a>
+        <br> <br>
+        <a href="#ps1" style="text-decoration:none; color: coral;">Pasatiempo 1</a>
+        <a href="#ps2" style=" text-decoration:none; color: coral;">Pasatiempo 2</a>
+        <a href="#ps3" style=" text-decoration:none; color: coral;">Pasatiempo 3</a>
+        <p style="color: coral;"> - Desarrollado en 2024 - </p>
 
     </footer>
 
