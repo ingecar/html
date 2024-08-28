@@ -1,2 +1,14 @@
 # Ignorar archivos .DS_Store
 .DS_Store
+boot.html
+inicio.html
+login.html
+inicio.css
+login.css
+banner.png
+donbillete.png
+loan.png
+slide.png
+/script
+login.html
+login.css
