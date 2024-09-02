@@ -1,0 +1,77 @@
+.navbar {
+  /*Distribuir contenido de forma horizontal */
+  display: flex;
+  /* Espacio entre los elementos a lo largo del eje principal*/
+  justify-content: space-between;
+  /* Alinea los items verticalmente */
+  align-items: center;
+  /*Color de fondo */
+  background-color: #333;
+  /* Espacio entre los elementos */
+  padding: 10px;
+}
+
+.logo a {
+  /*Color del texto que dice logo*/
+  color: rgb(210, 199, 222);
+  /*Elimimna el subrayado del enlace*/
+  text-decoration: none;
+  /*Tamaño de la fuente*/
+  font-size: 24px;
+}
+
+.nav-links {
+  /*Elimina los puntos de las listas*/
+  list-style: none;
+  /*Se utiliza para distribuir los elementos*/
+  display: flex;
+  /* Espacio entre cada enlaces */
+  gap: 5px;
+}
+
+.nav-links li a {
+  /* Color de los enlaces */
+  color: rgb(247, 247, 247);
+  /* quitar subrayado de los enlaces */
+  text-decoration: none;
+  /* Espacio entre los elementos */
+  padding: 8px 15px;
+}
+
+.dropdown {
+  /* Posiciona el elemento de forma relativa */
+  position: relative;
+}
+
+.dropdown-content a {
+  /* Espacio al rededor de los enlace */
+  padding: 12px 16px;
+  /* Eliminar subrayado de los enlaces */
+  text-decoration: none;
+  /* Enlaces ocupen el ancho del contenido */
+  display: block;
+}
+.dropdown-content {
+  /* Oculta el contenido dell dropdown por defecto */
+  display: none;
+  /* posiciona el contenido de forma absoluta respecto al contenedor */
+  position: absolute;
+  /* Color de fondo del dropdown */
+  background-color: #333;
+  /* Ancho minimo del contenido del dropdown */
+  min-width: 120px;
+  /* Sombra alrededor del dropdown efecto de profundidad */
+  /* box-shadow: 0 8px 16px rgb(red, red, red); */
+}
+
+.dropdown:hover .dropdown-content {
+  /* Muestra el contenido cuando el cursos esta sobre el elemento */
+  display: block;
+}
+
+.nav-links li a:hover {
+  /* Color de fondo al pasar cursos por enlaces */
+  background-color: red;
+  /* Bordes redondeados para el fondo */
+  border-radius: 4px;
+}
